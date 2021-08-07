@@ -91,6 +91,8 @@ if __name__ == "__main__":
     cap = cv2.VideoCapture(0)
     hands = mp_hands.Hands(static_image_mode=False , max_num_hands = 1 , min_detection_confidence=0.7, min_tracking_confidence=0.5)
 
+    hand_gesture = HandGesture()
+
     history_len = 10
     gesture_history = ["none"]*history_len
 
